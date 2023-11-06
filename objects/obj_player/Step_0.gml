@@ -1,0 +1,71 @@
+// Player input
+var _key_jump = keyboard_check_pressed(vk_space) || (mouse_check_button_pressed(mb_left) && !instance_position(mouse_x, mouse_y, obj_pause));
+   
+
+vsp = vsp + grv;
+
+if (collision) {	
+	sprite_index = spr_blood;
+	global.shake_magnitude = 10;
+	
+	if (!audio_is_playing(snd_blood)) audio_play_sound(snd_blood, 10, false) 	 
+	if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 10, false)
+	exit;
+}
+
+// Running sound
+if (place_meeting(x, y+1, obj_ground)) && !audio_is_playing(snd_run) {
+	audio_play_sound(snd_run, 1, true);
+}
+
+// Jumping (y+2px !)
+if (place_meeting(x, y+2, obj_ground)) && (_key_jump) {
+	vsp = -jumpsp;
+	audio_stop_sound(snd_run);
+	audio_play_sound(snd_jump, 1, false);
+}
+
+// Horizontal collision
+if (place_meeting(x+1, y, obj_ground)) {
+	
+	x+=global.game_speed;
+}
+
+
+
+
+// Vertical collision
+if (place_meeting(x, y+vsp, obj_ground)) {
+
+	while (!place_meeting(x, y+sign(vsp), obj_ground)) {	
+		y = y + sign(vsp);	
+	}
+	vsp = 0;
+}
+
+y = y + vsp;
+
+
+// Animation
+if (!place_meeting(x, y+1, obj_ground)) {
+
+	sprite_index = spr_player_jump;
+
+} else {sprite_index = spr_player_run}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
