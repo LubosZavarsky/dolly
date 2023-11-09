@@ -37,15 +37,32 @@ if (platform.x + platform.sprite_width + _platform_gap < room_width) {
    
 		instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y, "Instances", obj_obstacle);
 	
-	}	
-	
-	// Create obstacle on it with 25% chance
-	if (random(100) < 25) { 
-   
-		instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", choose(obj_metal,obj_slow));
-	
-	}	
-	
+	}		
+		
+		// Randomly determine the type of collectible
+		var collectibleType = -1;
+		
+		// 20% chance (can set each separately and should not overlap)
+		if (random(100) < 20) {
+		    collectibleType = 0; // Metal
+		} else if (random(100) < 20) {
+		    collectibleType = 1; // Slow
+		} else if (random(100) < 20) {
+		    collectibleType = 2; // Swap
+		}
+
+		// Create the collectible based on the determined type
+		switch (collectibleType) {
+		    case 0:
+		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_metal);
+		        break;
+		    case 1:
+		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_slow);
+		        break;
+		    case 2:
+		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_swap);
+		        break;
+		}	
 }
 
 // Destory when off-screen

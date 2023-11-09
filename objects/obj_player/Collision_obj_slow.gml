@@ -1,7 +1,7 @@
 if (special_mode != true) {
 	
 	special_mode = true;
-
+	
 	if (prev_speed == 0) prev_speed = global.game_speed;
 
 	global.game_speed = global.game_speed / 1.5;

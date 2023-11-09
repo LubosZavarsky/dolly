@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pause",
-  "eventList": [],
+  "name": "obj_swap",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_pause",
-    "path": "sprites/spr_pause/spr_pause.yy",
+    "name": "spr_swap",
+    "path": "sprites/spr_swap/spr_swap.yy",
   },
   "spriteMaskId": null,
   "visible": true,

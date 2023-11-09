@@ -5,6 +5,7 @@ layer_hspeed("bg3", global.game_speed/3);
 layer_hspeed("bg2", global.game_speed/4);
 layer_hspeed("bg1", global.game_speed/5);
 
+
 // Timer
 
 // Calculate the elapsed time in milliseconds
@@ -33,18 +34,21 @@ if (global.shake_magnitude > 0)
 // Pause
 if room == rm_game {
 	
+		
 	if (keyboard_check_pressed(ord("P")) || mouse_check_button(mb_left) && (instance_position(mouse_x, mouse_y, obj_pause) || instance_position(mouse_x, mouse_y, obj_btn_resume))) {
 	    global.is_paused = !global.is_paused;
+		with(obj_player) obj_player.x =obj_player.x;
 		
 	    if (!global.is_paused) {
-		        instance_activate_all();				
+				instance_activate_object(obj_player); //html5 export bug fix
+				instance_activate_all();
 				global.game_speed = spd_paused; 
-				spd_paused = 0; 
-				audio_resume_all(); 			
-				obj_player.x = player_pos;
+				spd_paused = 0; 			
+				audio_resume_all(); 					
 				with (obj_btn_resume) instance_destroy();
 				with (obj_btn_exit) instance_destroy();
-	        } else {				
+	        } else {			
+				instance_deactivate_object(obj_player); //html5 export bug fix
 				instance_deactivate_all(true);
 				audio_pause_all();		
 				if (spd_paused == 0) spd_paused = global.game_speed;		
@@ -55,7 +59,7 @@ if room == rm_game {
 		}				
 }
 
-// Distance calc ??? ...a zaroven playera netlaci platform naspat?
+// Distance calc ...prilis rychle? ...ked playera tlaci platform naspat?
 if (!global.is_paused) {
 	frame_count++;
 

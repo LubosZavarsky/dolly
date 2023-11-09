@@ -26,14 +26,14 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
     "name": "spr_ground",
     "path": "sprites/spr_ground/spr_ground.yy",
   },
   "spriteMaskId": {
-    "name": "spr_ground",
-    "path": "sprites/spr_ground/spr_ground.yy",
+    "name": "spr_ground_BACKUP",
+    "path": "sprites/spr_ground_BACKUP/spr_ground_BACKUP.yy",
   },
   "visible": true,
 }
