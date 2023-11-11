@@ -75,6 +75,7 @@ if (!global.is_paused) {
 // Skóre
 score = distance_moved;
 
+
 // Restart
 //if (!instance_number(obj_player)) RESTART_ALL;
 

@@ -1,9 +1,11 @@
 
 var _platform_height = 224;
-var _platform_width = irandom_range(10, 30);
-var _platform_gap = 0 
+var _platform_width = 20;
+var _platform_gap = 0;
 
-if (platform.x + platform.sprite_width + _platform_gap < room_width) {	
+randomize();
+
+if (platform.x + platform.sprite_width + _platform_gap <= room_width) {	
 
 	platform = instance_create_layer(room_width, room_height - _platform_height, "Instances", obj_ground);
 	platform.image_xscale = _platform_width;
@@ -13,7 +15,15 @@ if (platform.x + platform.sprite_width + _platform_gap < room_width) {
    
 		instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y, "Instances", obj_obstacle);
 	
-	}		
+	}	else {
+	
+		instance_create_layer(platform.x+50, platform.y+100, "Instances", obj_water);
+		
+	}
+   
+		
+	
+		
 		
 		// Randomly determine the type of collectible
 		var collectibleType = -1;

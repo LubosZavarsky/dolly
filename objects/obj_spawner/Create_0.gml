@@ -1,6 +1,6 @@
 platform_height = 224;
-platform_width = irandom_range(10, 30);
-platform_gap = 0
+platform_width = 5;
+platform_gap = 0;
 
 platform = instance_create_layer(room_width, room_height - platform_height, "Instances", obj_ground);
 platform.image_xscale = platform_width;

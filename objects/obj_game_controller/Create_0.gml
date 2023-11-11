@@ -2,6 +2,10 @@ global.game_speed = -7;
 acceleration = 0.0001; 
 max_speed = -15;
 
+// Special mode
+global.special_mode = false;
+
+
 start_time = 0;
 //start_time = current_time;
 //elapsed_seconds = 0;

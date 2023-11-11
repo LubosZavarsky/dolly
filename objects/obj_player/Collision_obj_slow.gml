@@ -1,6 +1,6 @@
-if (special_mode != true) {
+if (global.special_mode != true) {
 	
-	special_mode = true;
+	global.special_mode = true;
 	
 	if (prev_speed == 0) prev_speed = global.game_speed;
 
