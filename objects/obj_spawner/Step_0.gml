@@ -39,7 +39,8 @@ if (platform.x + platform.sprite_width + _platform_gap < room_width) {
 			case 3:
 				instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_multiplier);
 				break;
-		}	
+		}
+		
 }
 
 // Destory when off-screen
