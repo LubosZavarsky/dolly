@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_multiplier",
-    "path": "sprites/spr_multiplier/spr_multiplier.yy",
+    "name": "spr_multiply",
+    "path": "sprites/spr_multiply/spr_multiply.yy",
   },
   "spriteMaskId": null,
   "visible": true,

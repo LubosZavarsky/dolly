@@ -57,8 +57,8 @@ if (platform.x + platform.sprite_width + _platform_gap <= room_width) {
 		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_metal);
 		        break;
 		    case 1:
-		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_slow);
-		        break;
+		        var xxx = instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_slow);
+			    break;
 			case 2:
 				instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_multiplier);
 				break;

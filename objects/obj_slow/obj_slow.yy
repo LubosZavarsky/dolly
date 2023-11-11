@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_slow",
-    "path": "sprites/spr_slow/spr_slow.yy",
+    "name": "spr_slw",
+    "path": "sprites/spr_slw/spr_slw.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_satan",
-    "path": "sprites/spr_satan/spr_satan.yy",
+    "name": "spr_fast",
+    "path": "sprites/spr_fast/spr_fast.yy",
   },
   "spriteMaskId": null,
   "visible": true,
