@@ -42,8 +42,8 @@
     "path": "sprites/spr_player_run/spr_player_run.yy",
   },
   "spriteMaskId": {
-    "name": "spr_player_run",
-    "path": "sprites/spr_player_run/spr_player_run.yy",
+    "name": "spr_player_run_erect",
+    "path": "sprites/spr_player_run_erect/spr_player_run_erect.yy",
   },
   "visible": true,
 }

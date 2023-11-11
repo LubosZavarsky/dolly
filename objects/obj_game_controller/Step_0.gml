@@ -7,13 +7,13 @@ layer_hspeed("bg1", global.game_speed/5);
 
 
 // Timer
-
-// Calculate the elapsed time in milliseconds
-var _elapsed_time = current_time - start_time;
+ //.......
 
 
-// Convert elapsed time to seconds
-elapsed_seconds = _elapsed_time / 1000; 
+//// Calculate the elapsed time in milliseconds
+//var _elapsed_time = current_time - start_time;
+//// Convert elapsed time to seconds
+//elapsed_seconds = _elapsed_time / 1000; 
 
 
 // Make it faster

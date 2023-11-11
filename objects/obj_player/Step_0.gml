@@ -5,14 +5,14 @@ var _key_jump_held = keyboard_check(vk_space) || (mouse_check_button(mb_left) &&
 vsp = vsp + grv;
 
 if (collision) {	
-	//show_message("KOKOT")
+	
 	sprite_index = spr_blood;
-	global.shake_magnitude = 10;
-	
-	
+	global.shake_magnitude = 10;	
 	
 	if (!audio_is_playing(snd_blood)) audio_play_sound(snd_blood, 10, false) 	 
 	if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 10, false)
+	
+	instance_destroy();
 	
 	exit;
 }
