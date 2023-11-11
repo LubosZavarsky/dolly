@@ -13,11 +13,11 @@ if global.is_paused {
 	
 	draw_set_colour(c_white);
 	//draw_text(10, 10, "Distance moved: " + string(abs(distance_moved)) + " meters");
-	draw_text(10, 10, "Time left: " + string(countdown_time/60) + " seconds");
+	draw_text(10, 10, "Zostáva: " + string(countdown_time/60) + " sekúnd");
 
 	draw_set_colour(c_white);
 	//draw_text(10, 40, "Game speed: " + string(abs(global.game_speed)));
-	draw_text(10, 40, "Sheep: " + string(instance_number(obj_player)));
+	draw_text(10, 40, "Stádo: " + string(instance_number(obj_player)) + " ks");
 	
 }
 
