@@ -65,8 +65,26 @@ y = y + vsp;
 
 // Animation
 if (!place_meeting(x, y+1, obj_ground)) {
+	var _new_sprite;
+	
+	switch(spr_idx){
+		case spr_player_run:
+			_new_sprite = spr_player_jump;
+			break;
+		case spr_player_run_flower:
+			_new_sprite = spr_player_jump_flower;
+			break;
+		case spr_player_run_black:
+			_new_sprite = spr_player_jump_black;
+			break;
+		case spr_player_run_erect:
+			_new_sprite = spr_player_jump;
+			break;
+		default: 
+			_new_sprite = spr_player_jump;
+	}
 
-	sprite_index = spr_player_jump;
+	sprite_index = _new_sprite
 
 } else {
 
@@ -75,7 +93,7 @@ if (!place_meeting(x, y+1, obj_ground)) {
 
 
 if(sprite_index != spr_player_jump){
-		if(x >= original_x + 150) {
+	if(x >= original_x + 150) {
 	  x -= jiggle_speed;
 	  jiggle_direction = 1;
     } else if (x <= original_x - 50) {
