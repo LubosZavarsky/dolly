@@ -50,6 +50,8 @@
     {"name":"inst_2354A625","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_36DF9213","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_68BE9FE","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_20605114","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_210F9CA7","path":"rooms/rm_game/rm_game.yy",},
   ],
   "isDnd": false,
   "layers": [

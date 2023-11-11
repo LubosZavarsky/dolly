@@ -18,6 +18,8 @@ original_x = x;
 jiggle_direction = irandom(1)
 jiggle_speed = random(1)
 
+multiplied = false;
+
 	
 if (result < 65) {
 	spr_idx = choose(spr_player_run, spr_player_run_flower);		   
