@@ -33,6 +33,7 @@
     {"name":"background_swap","order":2,"path":"scripts/background_swap/background_swap.yy",},
     {"name":"spr_blood","order":6,"path":"sprites/spr_blood/spr_blood.yy",},
     {"name":"spr_obstacle","order":5,"path":"sprites/spr_obstacle/spr_obstacle.yy",},
+    {"name":"spawn_player","order":3,"path":"scripts/spawn_player/spawn_player.yy",},
     {"name":"obj_pause","order":9,"path":"objects/obj_pause/obj_pause.yy",},
     {"name":"spr_satan","order":7,"path":"sprites/spr_satan/spr_satan.yy",},
     {"name":"_318","order":2,"path":"sprites/_318/_318.yy",},

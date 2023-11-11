@@ -51,6 +51,7 @@
     {"id":{"name":"background_swap","path":"scripts/background_swap/background_swap.yy",},},
     {"id":{"name":"spr_blood","path":"sprites/spr_blood/spr_blood.yy",},},
     {"id":{"name":"spr_obstacle","path":"sprites/spr_obstacle/spr_obstacle.yy",},},
+    {"id":{"name":"spawn_player","path":"scripts/spawn_player/spawn_player.yy",},},
     {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},},
     {"id":{"name":"spr_satan","path":"sprites/spr_satan/spr_satan.yy",},},
     {"id":{"name":"_318","path":"sprites/_318/_318.yy",},},
