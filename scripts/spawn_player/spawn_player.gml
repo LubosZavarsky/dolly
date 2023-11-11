@@ -6,7 +6,7 @@ function spawn_players(_number){
   for(var _i = 0; _i < _number; _i++) {
 	var _x_pos = generate_x_position(_positions);
 	
-	instance_create_layer(_x_pos, room_height - sprite_get_height(spr_player_run), "Instances", obj_player)
+	instance_create_layer(_x_pos, room_height - 300, "Instances", obj_player)
 	}
 }
 	

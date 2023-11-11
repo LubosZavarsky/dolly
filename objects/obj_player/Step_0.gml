@@ -12,7 +12,7 @@ if (collision) {
 	if (!audio_is_playing(snd_blood)) audio_play_sound(snd_blood, 10, false) 	 
 	if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 10, false)
 	
-	instance_destroy();
+	//instance_destroy();
 	
 	exit;
 }

@@ -15,6 +15,7 @@ if (_above_obstacle && _falling) {
 	//Bounce off the obstacle
 	vsp = -8
 } else {	
+	
 	collision = true;
 	
 }
