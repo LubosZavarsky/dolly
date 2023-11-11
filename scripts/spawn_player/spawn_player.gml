@@ -13,7 +13,7 @@ function spawn_players(_number){
 
 
 function generate_x_position(_positions) {
-	var _x_position = irandom_range(100, 1000)
+	var _x_position = irandom_range(100, 500)
 	
 	if(!is_position_in_array(_x_position, _positions)) {
 		array_push(_positions, _x_position)
