@@ -20,6 +20,7 @@
     {"name":"player","order":15,"path":"folders/Sprites/player.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"bg_final","order":7,"path":"folders/Sprites/bg/bg_final.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_player_jump_black","order":4,"path":"sprites/spr_player_jump_black/spr_player_jump_black.yy",},
@@ -43,7 +44,7 @@
     {"name":"_318","order":2,"path":"sprites/_318/_318.yy",},
     {"name":"obj_metal","order":5,"path":"objects/obj_metal/obj_metal.yy",},
     {"name":"obj_multiplier","order":12,"path":"objects/obj_multiplier/obj_multiplier.yy",},
-    {"name":"obj_obstacle_spawner","order":3,"path":"objects/obj_obstacle_spawner/obj_obstacle_spawner.yy",},
+    {"name":"obj_obstacle_spawner_BACKUP","order":3,"path":"objects/obj_obstacle_spawner_BACKUP/obj_obstacle_spawner_BACKUP.yy",},
     {"name":"_217","order":1,"path":"sprites/_217/_217.yy",},
     {"name":"spr_player_run_black","order":2,"path":"sprites/spr_player_run_black/spr_player_run_black.yy",},
     {"name":"spr_player_jump_flower","order":6,"path":"sprites/spr_player_jump_flower/spr_player_jump_flower.yy",},
@@ -70,9 +71,9 @@
     {"name":"spr_water","order":17,"path":"sprites/spr_water/spr_water.yy",},
     {"name":"_3","order":2,"path":"sprites/_3/_3.yy",},
     {"name":"snd_metal","order":5,"path":"sounds/snd_metal/snd_metal.yy",},
+    {"name":"spr_bg_1","order":1,"path":"sprites/spr_bg_1/spr_bg_1.yy",},
     {"name":"obj_btn_start","order":2,"path":"objects/obj_btn_start/obj_btn_start.yy",},
     {"name":"obj_btn_resume","order":1,"path":"objects/obj_btn_resume/obj_btn_resume.yy",},
-    {"name":"bg_grass","order":6,"path":"sprites/bg_grass/bg_grass.yy",},
     {"name":"spr_grass","order":16,"path":"sprites/spr_grass/spr_grass.yy",},
   ],
 }

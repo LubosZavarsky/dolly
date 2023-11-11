@@ -1,7 +1,7 @@
 
-var _platform_height = choose(32,100,150);
+var _platform_height = 224;
 var _platform_width = irandom_range(10, 30);
-var _platform_gap = irandom_range(150,250);
+var _platform_gap = 0 
 
 if (platform.x + platform.sprite_width + _platform_gap < room_width) {	
 

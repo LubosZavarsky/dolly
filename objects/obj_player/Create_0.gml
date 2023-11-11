@@ -20,7 +20,7 @@ jiggle_speed = random(1)
 
 	
 if (result < 65) {
-	spr_idx = spr_player_run;		   
+	spr_idx = choose(spr_player_run, spr_player_run_flower);		   
 } else if (result < 85) {
 	spr_idx = spr_player_run_erect;		   
 } else {
