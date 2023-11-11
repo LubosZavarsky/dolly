@@ -1,4 +1,4 @@
-platform_height = 0;
+platform_height = choose(32,100,150,200);
 platform_width = irandom_range(10, 30);
 platform_gap = irandom_range(200,400);
 

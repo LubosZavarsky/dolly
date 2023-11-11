@@ -6,14 +6,14 @@ function spawn_players(_number){
   for(var _i = 0; _i < _number; _i++) {
 	var _x_pos = generate_x_position(_positions);
 	
-	instance_create_layer(_x_pos, room_height - 300, "Instances", obj_player)
+	instance_create_layer(_x_pos, room_height - irandom_range(400,700), "Instances", obj_player)
 	}
 }
 	
 
 
 function generate_x_position(_positions) {
-	var _x_position = irandom_range(100, 500)
+	var _x_position = irandom_range(100, 1000)
 	
 	if(!is_position_in_array(_x_position, _positions)) {
 		array_push(_positions, _x_position)

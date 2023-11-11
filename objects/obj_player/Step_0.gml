@@ -74,7 +74,7 @@ if (!place_meeting(x, y+1, obj_ground)) {
 
 } else {
 
-	sprite_index = spr_player_run
+	sprite_index = spr_idx;
 }
 
 
