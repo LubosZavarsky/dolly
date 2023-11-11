@@ -72,6 +72,7 @@
     {"id":{"name":"obj_obstacle_spawner_BACKUP","path":"objects/obj_obstacle_spawner_BACKUP/obj_obstacle_spawner_BACKUP.yy",},},
     {"id":{"name":"spr_bottom","path":"sprites/spr_bottom/spr_bottom.yy",},},
     {"id":{"name":"_217","path":"sprites/_217/_217.yy",},},
+    {"id":{"name":"spr_bg_5","path":"sprites/spr_bg_5/spr_bg_5.yy",},},
     {"id":{"name":"_116","path":"sprites/_116/_116.yy",},},
     {"id":{"name":"spr_player_run_black","path":"sprites/spr_player_run_black/spr_player_run_black.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},

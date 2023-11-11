@@ -52,6 +52,7 @@
     {"name":"obj_multiplier","order":12,"path":"objects/obj_multiplier/obj_multiplier.yy",},
     {"name":"obj_obstacle_spawner_BACKUP","order":3,"path":"objects/obj_obstacle_spawner_BACKUP/obj_obstacle_spawner_BACKUP.yy",},
     {"name":"_217","order":1,"path":"sprites/_217/_217.yy",},
+    {"name":"spr_bg_5","order":4,"path":"sprites/spr_bg_5/spr_bg_5.yy",},
     {"name":"spr_player_run_black","order":2,"path":"sprites/spr_player_run_black/spr_player_run_black.yy",},
     {"name":"spr_player_jump_flower","order":6,"path":"sprites/spr_player_jump_flower/spr_player_jump_flower.yy",},
     {"name":"obj_spawner_BACKUP","order":14,"path":"objects/obj_spawner_BACKUP/obj_spawner_BACKUP.yy",},
