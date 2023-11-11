@@ -12,7 +12,7 @@ layer_hspeed("bg1", global.game_speed/5);
 // Check if the countdown has reached zero
 if (countdown_time <= 0) {
     //show_debug_message("Time's up!");
-	instance_create_layer(x, y, "UI", obj_fader);
+	instance_create_layer(x, y, "Fade", obj_fader);
 	
 } else {
 	countdown_time -= 1;

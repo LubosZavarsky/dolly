@@ -14,7 +14,7 @@ if (platform.x + platform.sprite_width + _platform_gap <= room_width) {
 	
 	// Create obstacle on it with chance
 	if (random(100) < 25) {    
-		instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 110, "Instances", choose(obj_plot, obj_seno, obj_traktor));
+		instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - irandom_range(100,120), "Instances", choose(obj_plot, obj_seno, obj_traktor));
 	}  else	if (random(100) < 15) {
 		
 		var _spawn_x = platform.x;
