@@ -13,9 +13,9 @@ layer_hspeed("bg1", global.game_speed/5);
 countdown_time -= 1;
 
 // Check if the countdown has reached zero
-if (countdown_time <= 0) {
-    show_message("Time's up!");
-}
+//if (countdown_time <= 0) {
+//    show_message("Time's up!");
+//}
 
 
 //// Calculate the elapsed time in milliseconds
