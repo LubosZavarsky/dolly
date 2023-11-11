@@ -22,7 +22,7 @@ if room == rm_game && !global.is_paused {
 	// Create Pause btn
 	instance_create_layer(room_width - sprite_get_width(spr_pause) - 10, 10, "UI", obj_pause)
 	
-	spawn_players(100);
+	spawn_players(50);
 	
 	
 	//// Create players at unique positions	

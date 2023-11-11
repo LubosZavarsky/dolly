@@ -78,6 +78,22 @@ if (!place_meeting(x, y+1, obj_ground)) {
 }
 
 
+if(sprite_index != spr_player_jump){
+		if(x >= original_x + 150) {
+	  x -= jiggle_speed;
+	  jiggle_direction = 1;
+    } else if (x <= original_x - 50) {
+	  x += jiggle_speed;
+	  jiggle_direction = 0;
+    } else if (jiggle_direction == 0) {
+	  x += jiggle_speed
+    } else {
+	  x -= jiggle_speed
+    }	
+}
+
+
+
 
 
 

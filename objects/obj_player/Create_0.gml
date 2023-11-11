@@ -14,6 +14,10 @@ special_mode = false;
 sprites = [0,1,2];
 result = irandom(100);
 
+original_x = x;
+jiggle_direction = irandom(1)
+jiggle_speed = random(1)
+
 	
 if (result < 65) {
 	spr_idx = spr_player_run;		   
