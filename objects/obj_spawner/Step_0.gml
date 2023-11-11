@@ -1,28 +1,27 @@
+//randomise(); 
 
 var _platform_height = 224;
-var _platform_width = 20;
+var _platform_width = 10;
 var _platform_gap = 0;
 
-randomize();
+//show_debug_message(_platform_gap);
+
 
 if (platform.x + platform.sprite_width + _platform_gap <= room_width) {	
 
 	platform = instance_create_layer(room_width, room_height - _platform_height, "Instances", obj_ground);
 	platform.image_xscale = _platform_width;
 	
-	// Create obstacle on it with 40% chance
-	if (random(100) < 40) { 
-   
+	// Create obstacle on it with chance
+	if (random(100) < 30) {    
 		instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y, "Instances", obj_obstacle);
-	
-	}	else {
-	
-		instance_create_layer(platform.x+50, platform.y+100, "Instances", obj_water);
-		
+	} else if (random(100) < 15) {
+		instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y + 100, "Instances", obj_water);
 	}
-   
-		
 	
+	
+		
+		
 		
 		
 		// Randomly determine the type of collectible

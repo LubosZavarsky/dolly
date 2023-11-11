@@ -7,5 +7,5 @@ platform.image_xscale = platform_width;
 
 collectible_types = [0, 1, 2, 3]
 
-randomize();
+
 

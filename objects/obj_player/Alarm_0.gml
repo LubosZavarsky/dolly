@@ -12,7 +12,7 @@ prev_speed = 0;
 layer_set_visible("Tint", false);
 layer_set_visible("Dist", false);
 
-show_debug_message("XXXX: " + string(global.special_mode))
+show_debug_message("LLLLLLLLLL")
 
 global.special_mode = false;
 
