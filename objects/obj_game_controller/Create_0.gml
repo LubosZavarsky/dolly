@@ -7,7 +7,7 @@ prev_speed = 0;
 global.special_mode = false;
 
 
-time_left = 10;
+time_left = 60; // seconds
 countdown_time = time_left*60; // seconds*frame rate
 
 //start_time = current_time;
@@ -19,7 +19,6 @@ global.shake_magnitude = 0;
 shake_speed = 1;
 
 audio_play_sound(snd_music, 10, true);
-
 // Pause
 global.is_paused = false;
 spd_paused = 0;

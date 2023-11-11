@@ -1,3 +1,5 @@
+show_debug_message("LLLLLLLLLL")
+
 audio_stop_sound(snd_metal);
 audio_stop_sound(snd_slow);
 

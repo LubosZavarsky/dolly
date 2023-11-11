@@ -9,13 +9,14 @@ layer_hspeed("bg1", global.game_speed/5);
 
 // Timer
 
-// Decrease the countdown time based on delta time
-countdown_time -= 1;
-
 // Check if the countdown has reached zero
-//if (countdown_time <= 0) {
-//    show_message("Time's up!");
-//}
+if (countdown_time <= 0) {
+    //show_debug_message("Time's up!");
+	instance_create_layer(x, y, "UI", obj_fader);
+	
+} else {
+	countdown_time -= 1;
+}
 
 
 //// Calculate the elapsed time in milliseconds
