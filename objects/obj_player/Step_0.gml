@@ -8,6 +8,7 @@ if (collision) {
 	
 	sprite_index = spr_blood;
 	global.shake_magnitude = 10;	
+	x += global.game_speed;
 	
 	if (!audio_is_playing(snd_blood)) audio_play_sound(snd_blood, 10, false) 	 
 	if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 10, false)
