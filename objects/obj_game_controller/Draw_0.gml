@@ -15,7 +15,8 @@ if global.is_paused {
 	draw_text(10, 10, "Distance moved: " + string(abs(distance_moved)) + " meters");
 
 	draw_set_colour(c_black);
-	draw_text(10, 40, "Game speed: " + string(abs(global.game_speed)));
+	//draw_text(10, 40, "Game speed: " + string(abs(global.game_speed)));
+	draw_text(10, 40, "Sheep: " + string(instance_number(obj_player)));
 	
 }
 

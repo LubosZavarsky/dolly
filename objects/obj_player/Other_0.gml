@@ -1,4 +1,4 @@
-show_debug_message(string(abs(score)))
+instance_destroy();
 
 if (abs(score) > abs(global.high_score)) {
 

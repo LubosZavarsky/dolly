@@ -1,28 +1,4 @@
 
-//groundSpawnTimer += abs(global.game_speed)/10;
-
-//if (groundSpawnTimer >= spawnInterval) {
-//    // Calculate a random width within the specified range
-//    //var segmentWidth = irandom_range(minWidth, maxWidth);
-//	 var segment_width = choose(5, 8, 10, 15); 
-	 
-
-	
-//   var ground_piece = instance_create_layer(room_width, room_height - irandom_range(32,200), "Instances", obj_ground);
-	
-//		ground_piece.image_xscale = segment_width;
-		
-				
-//	// Set a new random spawn interval
-//		spawnInterval = irandom_range(minSpawnInterval, maxSpawnInterval);
-//	//spawnInterval = 400/abs(global.game_speed)
-	
-
-//    // Reset the timer
-//    groundSpawnTimer = 0;
-
-//}
-
 var _platform_height = choose(32,100,150,200);
 var _platform_width = irandom_range(10, 30);
 var _platform_gap = irandom_range(200,400);

@@ -5,11 +5,16 @@ var _key_jump_held = keyboard_check(vk_space) || (mouse_check_button(mb_left) &&
 vsp = vsp + grv;
 
 if (collision) {	
+	//show_message("KOKOT")
 	sprite_index = spr_blood;
 	global.shake_magnitude = 10;
 	
+	
+	
 	if (!audio_is_playing(snd_blood)) audio_play_sound(snd_blood, 10, false) 	 
 	if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 10, false)
+	
+	exit;
 }
 
 // Running sound
@@ -19,7 +24,7 @@ if (place_meeting(x, y+1, obj_ground)) && !audio_is_playing(snd_run) {
 
 // Jumping (y+5px forgiving jump !?)
 if (place_meeting(x, y+5, obj_ground)) && (_key_jump) {
-	vsp = -jumpsp  + irandom(1);
+	vsp = -jumpsp  + irandom(6);
 	audio_stop_sound(snd_run);
 	audio_play_sound(snd_jump, 1, false);
 }
