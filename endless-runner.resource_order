@@ -16,9 +16,9 @@
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"bg","order":1,"path":"folders/Sprites/bg.yy",},
+    {"name":"bg_swap","order":5,"path":"folders/Sprites/bg/bg_swap.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"bg_swap","order":5,"path":"folders/Sprites/bg/bg_swap.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"snd_hit","order":3,"path":"sounds/snd_hit/snd_hit.yy",},

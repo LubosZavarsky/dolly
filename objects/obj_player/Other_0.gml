@@ -8,7 +8,6 @@ if (abs(score) > abs(global.high_score)) {
 	
 }
 
-RESTART_ALL;
 
 
 

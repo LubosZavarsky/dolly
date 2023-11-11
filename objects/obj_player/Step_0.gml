@@ -10,7 +10,6 @@ if (collision) {
 	
 	if (!audio_is_playing(snd_blood)) audio_play_sound(snd_blood, 10, false) 	 
 	if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 10, false)
-	exit;
 }
 
 // Running sound
@@ -20,7 +19,7 @@ if (place_meeting(x, y+1, obj_ground)) && !audio_is_playing(snd_run) {
 
 // Jumping (y+5px forgiving jump !?)
 if (place_meeting(x, y+5, obj_ground)) && (_key_jump) {
-	vsp = -jumpsp;
+	vsp = -jumpsp  + irandom(1);
 	audio_stop_sound(snd_run);
 	audio_play_sound(snd_jump, 1, false);
 }

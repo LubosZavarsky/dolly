@@ -14,9 +14,7 @@ if (special_mode != true) {
 	layer_set_visible("Tint", true);
 
 	with (other) {
-
 		instance_destroy();
-
 	}
 
 }
