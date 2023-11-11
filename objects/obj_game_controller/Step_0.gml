@@ -1,4 +1,5 @@
 // BG parallax
+layer_hspeed("bg_grass", global.game_speed/1.2);
 layer_hspeed("bg5", global.game_speed/1.5);
 layer_hspeed("bg4", global.game_speed/2);
 layer_hspeed("bg3", global.game_speed/3);
@@ -40,7 +41,7 @@ if room == rm_game {
 		with(obj_player) obj_player.x =obj_player.x;
 		
 	    if (!global.is_paused) {
-				instance_activate_object(obj_player); //html5 export bug fix
+				//instance_activate_object(obj_player); //html5 export bug fix
 				instance_activate_all();
 				global.game_speed = spd_paused; 
 				spd_paused = 0; 			
@@ -48,7 +49,7 @@ if room == rm_game {
 				with (obj_btn_resume) instance_destroy();
 				with (obj_btn_exit) instance_destroy();
 	        } else {			
-				instance_deactivate_object(obj_player); //html5 export bug fix
+				//instance_deactivate_object(obj_player); //html5 export bug fix
 				instance_deactivate_all(true);
 				audio_pause_all();		
 				if (spd_paused == 0) spd_paused = global.game_speed;		
@@ -75,7 +76,7 @@ if (!global.is_paused) {
 score = distance_moved;
 
 // Restart
-if (instance_number(obj_player) == 0) RESTART_ALL;
+//if (!instance_number(obj_player)) RESTART_ALL;
 
 
 
