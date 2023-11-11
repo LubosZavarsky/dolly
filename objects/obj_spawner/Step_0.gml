@@ -1,7 +1,7 @@
 
-var _platform_height = choose(32,100,150,200);
+var _platform_height = choose(32,100,150);
 var _platform_width = irandom_range(10, 30);
-var _platform_gap = irandom_range(200,400);
+var _platform_gap = irandom_range(150,250);
 
 if (platform.x + platform.sprite_width + _platform_gap < room_width) {	
 
@@ -18,26 +18,31 @@ if (platform.x + platform.sprite_width + _platform_gap < room_width) {
 		// Randomly determine the type of collectible
 		var collectibleType = -1;
 		
+		
 		// 20% chance (can set each separately and should not overlap)
 		if (random(100) < 20) {
-		    collectibleType = 0; // Metal
-		} else if (random(100) < 20) {
-		    collectibleType = 1; // Slow
-		} else if (random(100) < 20) {
-		    collectibleType = 2; // Swap
-		}
+			var index = irandom(array_length(collectible_types)) - 1;
+		    collectibleType = collectible_types[irandom(array_length(collectible_types) - 1)]
+		} 
 
 		// Create the collectible based on the determined type
 		switch (collectibleType) {
 		    case 0:
+				show_message("creating metal object")
 		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_metal);
 		        break;
 		    case 1:
+				show_message("creating slow object")
 		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_slow);
 		        break;
 		    case 2:
+				show_message("creating swap object")
 		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_swap);
 		        break;
+			case 3:
+				show_message("creating multiplier object")
+				instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_multiplier);
+				break;
 		}	
 }
 

@@ -23,6 +23,7 @@
   "ResourceOrderSettings": [
     {"name":"snd_hit","order":3,"path":"sounds/snd_hit/snd_hit.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"spr_multiplier","order":13,"path":"sprites/spr_multiplier/spr_multiplier.yy",},
     {"name":"scale_canvas","order":1,"path":"scripts/scale_canvas/scale_canvas.yy",},
     {"name":"_520","order":4,"path":"sprites/_520/_520.yy",},
     {"name":"obj_scaler","order":2,"path":"objects/obj_scaler/obj_scaler.yy",},
@@ -38,6 +39,7 @@
     {"name":"spr_satan","order":7,"path":"sprites/spr_satan/spr_satan.yy",},
     {"name":"_318","order":2,"path":"sprites/_318/_318.yy",},
     {"name":"obj_metal","order":5,"path":"objects/obj_metal/obj_metal.yy",},
+    {"name":"obj_multiplier","order":12,"path":"objects/obj_multiplier/obj_multiplier.yy",},
     {"name":"NOT_USED_obj_obstacle_spawner","order":3,"path":"objects/NOT_USED_obj_obstacle_spawner/NOT_USED_obj_obstacle_spawner.yy",},
     {"name":"_217","order":1,"path":"sprites/_217/_217.yy",},
     {"name":"spr_player_jump","order":4,"path":"sprites/spr_player_jump/spr_player_jump.yy",},
