@@ -4,7 +4,7 @@ if (global.special_mode != true) {
 	global.special_mode = true;	
 	
 	
-	if (prev_speed == 0) prev_speed = global.game_speed;
+	if (obj_game_controller.prev_speed == 0) obj_game_controller.prev_speed = global.game_speed;
 
 	global.game_speed = global.game_speed * 2;
 
@@ -13,7 +13,9 @@ if (global.special_mode != true) {
 
 	layer_set_visible("Tint", true);
 	
-	alarm[0] = 60*6;
+	if (obj_game_controller.alarm[0] < 0) {
+		obj_game_controller.alarm[0] = 60 * 5;
+	}
 
 	with (other) {
 		instance_destroy();

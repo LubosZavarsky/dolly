@@ -1,6 +1,7 @@
 global.game_speed = -7;
 acceleration = 0.0001; 
 max_speed = -15;
+prev_speed = 0;
 
 // Special mode
 global.special_mode = false;
