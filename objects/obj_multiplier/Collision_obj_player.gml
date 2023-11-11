@@ -4,6 +4,8 @@ if(!used){
 }
 
 
+instance_destroy()
+
 
 
 
