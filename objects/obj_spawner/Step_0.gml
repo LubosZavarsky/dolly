@@ -28,19 +28,15 @@ if (platform.x + platform.sprite_width + _platform_gap < room_width) {
 		// Create the collectible based on the determined type
 		switch (collectibleType) {
 		    case 0:
-				show_message("creating metal object")
 		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_metal);
 		        break;
 		    case 1:
-				show_message("creating slow object")
 		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_slow);
 		        break;
 		    case 2:
-				show_message("creating swap object")
 		        instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_swap);
 		        break;
 			case 3:
-				show_message("creating multiplier object")
 				instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 200, "Instances", obj_multiplier);
 				break;
 		}	
