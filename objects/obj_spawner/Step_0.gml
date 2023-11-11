@@ -1,4 +1,4 @@
-//randomise(); 
+randomise(); 
 
 var _platform_height = 224;
 var _platform_width = 10;
@@ -13,9 +13,9 @@ if (platform.x + platform.sprite_width + _platform_gap <= room_width) {
 	platform.image_xscale = _platform_width;
 	
 	// Create obstacle on it with chance
-	if (random(100) < 20) {    
-		instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y, "Instances", obj_obstacle);
-	} else if (random(100) < 15) {
+	if (random(100) < 25) {    
+		instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - 90, "Instances", choose(obj_plot, obj_seno));
+	}  else	if (random(100) < 15) {
 		
 		var _spawn_x = platform.x;
 		var _spawn_y = irandom_range(64, platform.sprite_width - 32);
@@ -35,10 +35,6 @@ if (platform.x + platform.sprite_width + _platform_gap <= room_width) {
 			instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y + 100, "Instances", obj_water);
 		}
 	}
-	
-	
-		
-		
 		
 		
 		// Randomly determine the type of collectible
