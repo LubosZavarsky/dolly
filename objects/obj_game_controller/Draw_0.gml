@@ -12,7 +12,8 @@ if global.is_paused {
 } else {
 	
 	draw_set_colour(c_black);
-	draw_text(10, 10, "Distance moved: " + string(abs(distance_moved)) + " meters");
+	//draw_text(10, 10, "Distance moved: " + string(abs(distance_moved)) + " meters");
+	draw_text(10, 10, "Time left: " + string(abs(countdown_time)) + " seconds");
 
 	draw_set_colour(c_black);
 	//draw_text(10, 40, "Game speed: " + string(abs(global.game_speed)));

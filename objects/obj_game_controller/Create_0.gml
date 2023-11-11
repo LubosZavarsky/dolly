@@ -7,6 +7,8 @@ global.special_mode = false;
 
 
 start_time = 0;
+countdown_time = 5*60; // seconds*frame rate
+
 //start_time = current_time;
 //elapsed_seconds = 0;
 

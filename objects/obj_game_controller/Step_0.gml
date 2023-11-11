@@ -1,5 +1,5 @@
 // BG parallax
-layer_hspeed("bg_grass", global.game_speed/1.2);
+layer_hspeed("bg_grass", global.game_speed);
 layer_hspeed("bg5", global.game_speed/1.5);
 layer_hspeed("bg4", global.game_speed/2);
 layer_hspeed("bg3", global.game_speed/3);
@@ -8,7 +8,14 @@ layer_hspeed("bg1", global.game_speed/5);
 
 
 // Timer
- //.......
+
+// Decrease the countdown time based on delta time
+countdown_time -= 1;
+
+// Check if the countdown has reached zero
+if (countdown_time <= 0) {
+    show_message("Time's up!");
+}
 
 
 //// Calculate the elapsed time in milliseconds
