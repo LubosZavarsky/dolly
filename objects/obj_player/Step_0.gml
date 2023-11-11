@@ -12,8 +12,6 @@ if (collision) {
 	if (!audio_is_playing(snd_blood)) audio_play_sound(snd_blood, 10, false) 	 
 	if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 10, false)
 	
-	//instance_destroy();
-	
 	exit;
 }
 
@@ -30,21 +28,19 @@ if (place_meeting(x, y+5, obj_ground)) && (_key_jump) {
 }
 
 //// Double jumps
-//if (place_meeting(x, y+5, obj_ground)) {
+if (place_meeting(x, y+5, obj_ground)) {
+	jumps = maxjumps;
+}
 
-//	jumps = maxjumps;
+if (_key_jump) && (jumps > 0) {
 
-//}
+	jumps -=1;
+	vsp = -jumpsp - irandom(3);;
 
-//if (_key_jump) && (jumps > 0) {
-
-//	jumps -=1;
-//	vsp = -jumpsp;
-
-//}
+}
 
 // Jump higher when holding jump key
-if (vsp < 0) && (!_key_jump_held) vsp = max(vsp,0); // max(vsp,-jumpsp/3);
+// if (vsp < 0) && (!_key_jump_held) vsp = max(vsp,0); // max(vsp,-jumpsp/3);
 
 
 // Horizontal collision
