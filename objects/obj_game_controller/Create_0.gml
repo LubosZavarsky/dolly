@@ -6,8 +6,8 @@ max_speed = -15;
 global.special_mode = false;
 
 
-start_time = 0;
-countdown_time = 5*60; // seconds*frame rate
+time_left = 10;
+countdown_time = time_left*60; // seconds*frame rate
 
 //start_time = current_time;
 //elapsed_seconds = 0;
