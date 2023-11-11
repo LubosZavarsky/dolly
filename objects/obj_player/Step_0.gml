@@ -24,7 +24,7 @@ if (place_meeting(x, y+1, obj_ground)) && !audio_is_playing(snd_run) {
 
 // Jumping (y+5px forgiving jump !?)
 if (place_meeting(x, y+5, obj_ground)) && (_key_jump) {
-	vsp = -jumpsp  + irandom(6);
+	vsp = -jumpsp  - irandom(3);
 	audio_stop_sound(snd_run);
 	audio_play_sound(snd_jump, 1, false);
 }
