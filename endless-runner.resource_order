@@ -20,9 +20,9 @@
     {"name":"bg_swap","order":5,"path":"folders/Sprites/bg/bg_swap.yy",},
     {"name":"player","order":15,"path":"folders/Sprites/player.yy",},
     {"name":"powerups","order":18,"path":"folders/Sprites/powerups.yy",},
+    {"name":"rooms","order":24,"path":"folders/Sprites/rooms.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"rooms","order":24,"path":"folders/Sprites/rooms.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_player_jump_black","order":4,"path":"sprites/spr_player_jump_black/spr_player_jump_black.yy",},

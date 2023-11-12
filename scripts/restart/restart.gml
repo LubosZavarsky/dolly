@@ -11,5 +11,5 @@ function restart() {
   
 
   // Go to the very first room, as per room order
-  room_goto(rm_game);
+  room_goto(rm_win);
 }
