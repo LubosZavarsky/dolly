@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 45.025166,
+  "duration": 9.11675,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sounds",
+    "path": "folders/Sounds/sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
   "soundFile": "snd_run.mp3",
-  "type": 0,
+  "type": 1,
   "volume": 1.0,
 }

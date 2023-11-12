@@ -1,9 +1,8 @@
-show_debug_message("LLLLLLLLLL")
 
-audio_stop_sound(snd_metal);
-audio_stop_sound(snd_slow);
+audio_stop_sound(msc_fast);
+audio_stop_sound(msc_slow);
 
-audio_play_sound(snd_music, 10, true);
+audio_play_sound(msc_game, 10, true);
 
 // Revert Slow
 global.game_speed = prev_speed;
