@@ -16,14 +16,13 @@ if (platform.x + platform.sprite_width + _platform_gap <= room_width) {
 	if (random(100) < 25) {    
 		instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y - irandom_range(100,120), "Instances", choose(obj_plot, obj_seno, obj_traktor));
 	}  else	if (random(100) < 15) {
-		
-		var _spawn_x = platform.x;
-		var _spawn_y = irandom_range(64, platform.sprite_width - 32);
+
+		var _spawn_x = platform.x + irandom_range(64, platform.sprite_width - 32);
+		var _spawn_y = platform.y + 100
 		var _no_instances = true;		
 
 		with(obj_water) {
-			var _distance_to_spawn = point_distance(other.x, other.y, _spawn_x, _spawn_y);
-   
+			var _distance_to_spawn = point_distance(x, y, _spawn_x, _spawn_y);
 
 			if (_distance_to_spawn < 500) {					
 				_no_instances = false;
@@ -32,7 +31,7 @@ if (platform.x + platform.sprite_width + _platform_gap <= room_width) {
 		}
 		
 		if(_no_instances){		
-			instance_create_layer(platform.x + irandom_range(64, platform.sprite_width - 32), platform.y + 100, "Instances", obj_water);
+			instance_create_layer(_spawn_x, _spawn_y, "Instances", obj_water);
 		}
 	}
 		
