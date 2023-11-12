@@ -8,8 +8,13 @@ if (alpha_current >= alpha_target) {
 	
 
     alpha_current = alpha_target; // Ensure we don't overshoot the target
-    // You can perform additional actions here when the fade is complete
-	room_goto(rm_intro);
+   
+	
+	//if (instance_number(obj_player) > 0) {	
+	//	room_goto(rm_win);	
+	//} else { room_goto(rm_lose);	}
+	
+	room_goto(rm_win);	
 	
 	instance_destroy();
 	
