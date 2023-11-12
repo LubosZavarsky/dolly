@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2bf25714-3af1-4375-afb8-89bab8dcf88d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d4a5d159-710a-4bae-9c24-da847546230d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 768,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4e03dbaa-fdb2-4fd5-b8ba-d12434ea4928","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"25927905-b66c-496f-b0fc-4b8f0dc46971","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2bf25714-3af1-4375-afb8-89bab8dcf88d","path":"sprites/spr_bg_2/spr_bg_2.yy",},},},"Disabled":false,"id":"b71d80bf-815f-495e-92ca-bf672f873dc9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d4a5d159-710a-4bae-9c24-da847546230d","path":"sprites/spr_bg_2/spr_bg_2.yy",},},},"Disabled":false,"id":"90a15d5d-205d-4c00-8c41-4d8b009c63b3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

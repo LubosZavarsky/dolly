@@ -10,8 +10,8 @@ if (collision) {
 	global.shake_magnitude = 10;	
 	x += global.game_speed;
 	
-	if (!audio_is_playing(snd_blood)) audio_play_sound(snd_blood, 10, false) 	 
-	if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 10, false)
+	 
+	if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 1, false)
 	
 	exit;
 }
@@ -38,7 +38,7 @@ if (_key_jump) && (jumps > 0) {
 	jumps -=1;
 	vsp = -jumpsp - irandom(3);
 	audio_stop_sound(snd_run);
-//	audio_play_sound(snd_jump, 1, false);
+	audio_play_sound(snd_jump, 1, false);
 
 }
 

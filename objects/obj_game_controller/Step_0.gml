@@ -13,8 +13,10 @@ layer_hspeed("bg1", global.game_speed/5);
 // Check if the countdown has reached zero
 if (countdown_time <= 0) {
     //show_debug_message("Time's up!");
-	instance_create_layer(x, y, "Fade", obj_fader);
 	
+	if (instance_number(obj_fader) == 0) instance_create_layer(x, y, "Fade", obj_fader);
+	
+		
 } else {
 	countdown_time -= 1;
 }
@@ -41,33 +43,33 @@ if (global.shake_magnitude > 0)
 	global.shake_magnitude -= 0.2;
 }
 
-// Pause
-if room == rm_game {
+//// Pause
+//if room == rm_game {
 	
 		
-	if (keyboard_check_pressed(ord("P")) || mouse_check_button(mb_left) && (instance_position(mouse_x, mouse_y, obj_pause) || instance_position(mouse_x, mouse_y, obj_btn_resume))) {
-	    global.is_paused = !global.is_paused;
-		with(obj_player) obj_player.x =obj_player.x;
+//	if (keyboard_check_pressed(ord("P")) || mouse_check_button(mb_left) && (instance_position(mouse_x, mouse_y, obj_pause) || instance_position(mouse_x, mouse_y, obj_btn_resume))) {
+//	    global.is_paused = !global.is_paused;
 		
-	    if (!global.is_paused) {
-				//instance_activate_object(obj_player); //html5 export bug fix
-				instance_activate_all();
-				global.game_speed = spd_paused; 
-				spd_paused = 0; 			
-				audio_resume_all(); 					
-				with (obj_btn_resume) instance_destroy();
-				with (obj_btn_exit) instance_destroy();
-	        } else {			
-				//instance_deactivate_object(obj_player); //html5 export bug fix
-				instance_deactivate_all(true);
-				audio_pause_all();		
-				if (spd_paused == 0) spd_paused = global.game_speed;		
-				global.game_speed = 0;	
-				instance_create_layer(room_width / 2, room_height / 1.5, "UI", obj_btn_resume);
-				instance_create_layer(room_width / 2, room_height / 1.2, "UI", obj_btn_exit);
-			}			
-		}				
-}
+		
+//	    if (!global.is_paused) {
+//				//instance_activate_object(obj_player); //html5 export bug fix
+//				instance_activate_all();
+//				global.game_speed = spd_paused; 
+//				spd_paused = 0; 			
+//				audio_resume_all(); 					
+//				with (obj_btn_resume) instance_destroy();
+//				with (obj_btn_exit) instance_destroy();
+//	        } else {			
+//				//instance_deactivate_object(obj_player); //html5 export bug fix
+//				instance_deactivate_all(true);
+//				audio_pause_all();		
+//				if (spd_paused == 0) spd_paused = global.game_speed;		
+//				global.game_speed = 0;	
+//				instance_create_layer(room_width / 2, room_height / 1.5, "UI", obj_btn_resume);
+//				instance_create_layer(room_width / 2, room_height / 1.2, "UI", obj_btn_exit);
+//			}			
+//		}				
+//}
 
 // Distance calc ...prilis rychle? ...ked playera tlaci platform naspat?
 if (!global.is_paused) {

@@ -8,8 +8,9 @@ if (global.special_mode != true) {
 
 	global.game_speed = global.game_speed * 2;
 
-	audio_stop_sound(snd_music);
-	if (!audio_is_playing(snd_metal)) audio_play_sound(snd_metal, 10, true);
+	audio_stop_sound(msc_game);
+	if (!audio_is_playing(snd_fast)) audio_play_sound(snd_fast, 1, false);
+	if (!audio_is_playing(msc_fast)) audio_play_sound(msc_fast, 10, true);
 
 	layer_set_visible("Tint", true);
 	

@@ -6,6 +6,9 @@ prev_speed = 0;
 // Special mode
 global.special_mode = false;
 
+audio_stop_all();
+if !audio_is_playing(msc_game)  audio_play_sound(msc_game, 10, true);
+
 
 time_left = 60; // seconds
 countdown_time = time_left*60; // seconds*frame rate
@@ -18,7 +21,7 @@ shake_fx = layer_get_fx("Shake");
 global.shake_magnitude = 0;
 shake_speed = 1;
 
-audio_play_sound(snd_music, 10, true);
+
 // Pause
 global.is_paused = false;
 spd_paused = 0;
