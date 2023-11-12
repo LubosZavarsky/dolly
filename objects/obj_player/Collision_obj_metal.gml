@@ -18,7 +18,7 @@ if (global.special_mode != true) {
 	}
 
 	with (other) {
-		instance_destroy();
+		sprite_index = spr_pwrp_taken;
 	}
 	
 }

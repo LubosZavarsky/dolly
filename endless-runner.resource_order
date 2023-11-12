@@ -69,6 +69,7 @@
     {"name":"obj_slow","order":6,"path":"objects/obj_slow/obj_slow.yy",},
     {"name":"spr_player_run_flower","order":5,"path":"sprites/spr_player_run_flower/spr_player_run_flower.yy",},
     {"name":"spr_ground","order":11,"path":"sprites/spr_ground/spr_ground.yy",},
+    {"name":"spr_pwrp_taken","order":5,"path":"sprites/spr_pwrp_taken/spr_pwrp_taken.yy",},
     {"name":"spr_bg_2","order":2,"path":"sprites/spr_bg_2/spr_bg_2.yy",},
     {"name":"snd_blood","order":2,"path":"sounds/snd_blood/snd_blood.yy",},
     {"name":"obj_obstacle","order":4,"path":"objects/obj_obstacle/obj_obstacle.yy",},

@@ -17,8 +17,8 @@ if (global.special_mode != true) {
 	layer_set_visible("Dist", true);
 
 	with (other) {
-
-		instance_destroy();
+		
+		sprite_index = spr_pwrp_taken;
 
 	}
 

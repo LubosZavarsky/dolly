@@ -95,6 +95,7 @@
     {"id":{"name":"spr_player_run_flower","path":"sprites/spr_player_run_flower/spr_player_run_flower.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},},
+    {"id":{"name":"spr_pwrp_taken","path":"sprites/spr_pwrp_taken/spr_pwrp_taken.yy",},},
     {"id":{"name":"spr_bg_2","path":"sprites/spr_bg_2/spr_bg_2.yy",},},
     {"id":{"name":"snd_blood","path":"sounds/snd_blood/snd_blood.yy",},},
     {"id":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},},
