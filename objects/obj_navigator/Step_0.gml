@@ -10,6 +10,8 @@ if room == rm_intro || room == rm_home || room == rm_instructions {
 if room == rm_game {
 
 	if (instance_number(obj_player) == 0) {
+		audio_stop_sound(snd_metal);
+		audio_stop_sound(snd_slow);
 		room_goto(rm_lose);
 	}
 
