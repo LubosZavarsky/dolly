@@ -6,11 +6,12 @@ if (alpha_current < alpha_target) {
 	
 	if (instance_exists(obj_player)){
 	
-		obj_player.grv = -3;
-		obj_player.vsp = -3;
-		obj_player.jumpsp = 0;
-		obj_player.jumps = -1;
-	
+		with (obj_player) {			
+			grv = -5;
+			vsp = -3;
+			jumpsp = 0;
+			jumps = -1;		
+		}	
 	}	
 }
 

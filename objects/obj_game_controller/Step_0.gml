@@ -1,8 +1,7 @@
 // BG parallax
 layer_hspeed("bg_grass", global.game_speed);
 layer_hspeed("bg_plot", global.game_speed);
-layer_hspeed("bg5", global.game_speed/1.5);
-layer_hspeed("bg4", global.game_speed/2);
+layer_hspeed("bg4", global.game_speed/1.5);
 layer_hspeed("bg3", global.game_speed/3);
 layer_hspeed("bg2", global.game_speed/4);
 layer_hspeed("bg1", global.game_speed/5);
