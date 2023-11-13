@@ -8,7 +8,7 @@ prev_speed = 0;
 global.special_mode = false;
 
 // Timer
-time_left = 10; // seconds
+time_left = 60; // seconds
 countdown_time = time_left*60; // seconds*frame rate
 
 

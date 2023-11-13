@@ -4,7 +4,9 @@ if (global.special_mode != true) {
 	
 	if (obj_game_controller.prev_speed == 0) obj_game_controller.prev_speed = global.game_speed;
 
-	global.game_speed = global.game_speed / 1.5;
+	global.game_speed = global.game_speed / 1.3;
+	
+	obj_player.jumpsp = 8
 	
 
 	if (obj_game_controller.alarm[0] < 0) {

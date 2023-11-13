@@ -1,5 +1,5 @@
 vsp = 0;
-jumpsp = 7;
+jumpsp = 6;
 grv = 0.3;
 
 jumps = 0;

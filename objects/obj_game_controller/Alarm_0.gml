@@ -7,6 +7,9 @@ audio_play_sound(msc_game, 10, true);
 global.game_speed = prev_speed;
 prev_speed = 0;
 
+// Revert gravity
+obj_player.jumpsp = 8
+
 // Revert layers
 layer_set_visible("Tint", false);
 layer_set_visible("Dist", false);
