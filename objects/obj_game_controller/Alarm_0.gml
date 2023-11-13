@@ -1,6 +1,5 @@
-
-audio_stop_sound(msc_fast);
-audio_stop_sound(msc_slow);
+if audio_is_playing(msc_fast) audio_stop_sound(msc_fast);
+if audio_is_playing(msc_slow) audio_stop_sound(msc_slow);
 
 audio_play_sound(msc_game, 10, true);
 

@@ -1,6 +1,6 @@
 // Player input
-var _key_jump = keyboard_check_pressed(vk_space) || (mouse_check_button_pressed(mb_left) && !instance_position(mouse_x, mouse_y, obj_pause));
-var _key_jump_held = keyboard_check(vk_space) || (mouse_check_button(mb_left) && !instance_position(mouse_x, mouse_y, obj_pause));
+var _key_jump = keyboard_check_pressed(vk_space) || (mouse_check_button_pressed(mb_left));
+var _key_jump_held = keyboard_check(vk_space) || (mouse_check_button(mb_left));
 
 vsp = vsp + grv;
 
