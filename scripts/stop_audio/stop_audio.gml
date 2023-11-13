@@ -24,4 +24,5 @@ function stop_audio() {
 	        audio_stop_sound(_audioFilesToStop[i]);
 	    }
 	}
+
 }
