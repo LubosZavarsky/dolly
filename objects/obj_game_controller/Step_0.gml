@@ -10,8 +10,10 @@ layer_hspeed("bg1", global.game_speed/5);
 // Timer
 // Check if the countdown has reached zero
 if (countdown_time <= 0) {
-    //show_debug_message("Time's up!");
 	
+	global.game_speed = 0;
+	audio_stop_all();	
+	if (!audio_is_playing(snd_win)) audio_play_sound(snd_win, 1, false);
 	if (instance_number(obj_fader) == 0) instance_create_layer(x, y, "Fade", obj_fader);
 	
 		

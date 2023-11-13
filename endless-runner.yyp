@@ -45,6 +45,7 @@
     {"id":{"name":"spr_player_jump_black","path":"sprites/spr_player_jump_black/spr_player_jump_black.yy",},},
     {"id":{"name":"rm_home","path":"rooms/rm_home/rm_home.yy",},},
     {"id":{"name":"spr_room_win","path":"sprites/spr_room_win/spr_room_win.yy",},},
+    {"id":{"name":"spr_grass_cover","path":"sprites/spr_grass_cover/spr_grass_cover.yy",},},
     {"id":{"name":"obj_plot","path":"objects/obj_plot/obj_plot.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"scale_canvas","path":"scripts/scale_canvas/scale_canvas.yy",},},

@@ -1,9 +1,8 @@
 // Increase alpha value gradually
 if (alpha_current < alpha_target) {
-    alpha_current += alpha_increment;
-	audio_stop_all();	
-	global.game_speed = 0;
 	
+    alpha_current += alpha_increment;
+		
 	if (instance_exists(obj_player)){
 	
 		with (obj_player) {			

@@ -2,7 +2,7 @@ randomise();
 
 var _platform_height = 224;
 var _platform_width = 10;
-var _platform_gap = -10;
+var _platform_gap = -100;
 
 //show_debug_message(_platform_gap);
 

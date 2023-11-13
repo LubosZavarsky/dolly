@@ -16,7 +16,7 @@ if room == rm_lose {
 }
 
 if room == rm_win {	
-	audio_stop_all();
-	if (!audio_is_playing(snd_win)) audio_play_sound(snd_win, 1, false);
+	//audio_stop_all();
+	//if (!audio_is_playing(snd_win)) audio_play_sound(snd_win, 1, false);
 
 }
