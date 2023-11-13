@@ -11,7 +11,6 @@ global.special_mode = false;
 time_left = 20; // seconds
 countdown_time = time_left*60; // seconds*frame rate
 
-
 // Screen shake
 shake_fx = layer_get_fx("Shake");
 global.shake_magnitude = 0;

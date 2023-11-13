@@ -4,6 +4,7 @@
   "name": "endless-runner",
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
+    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup2","targets":-1,},
   ],
   "configs": {
     "children": [],
@@ -74,6 +75,7 @@
     {"id":{"name":"spr_bottom","path":"sprites/spr_bottom/spr_bottom.yy",},},
     {"id":{"name":"spr_room_home","path":"sprites/spr_room_home/spr_room_home.yy",},},
     {"id":{"name":"spr_bg_5","path":"sprites/spr_bg_5/spr_bg_5.yy",},},
+    {"id":{"name":"stop_audio","path":"scripts/stop_audio/stop_audio.yy",},},
     {"id":{"name":"spr_player_run_black","path":"sprites/spr_player_run_black/spr_player_run_black.yy",},},
     {"id":{"name":"spr_room_instructions","path":"sprites/spr_room_instructions/spr_room_instructions.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},

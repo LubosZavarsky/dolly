@@ -54,6 +54,7 @@
     {"name":"obj_multiplier","order":12,"path":"objects/obj_multiplier/obj_multiplier.yy",},
     {"name":"spr_room_home","order":1,"path":"sprites/spr_room_home/spr_room_home.yy",},
     {"name":"spr_bg_5","order":4,"path":"sprites/spr_bg_5/spr_bg_5.yy",},
+    {"name":"stop_audio","order":4,"path":"scripts/stop_audio/stop_audio.yy",},
     {"name":"spr_player_run_black","order":2,"path":"sprites/spr_player_run_black/spr_player_run_black.yy",},
     {"name":"spr_room_instructions","order":2,"path":"sprites/spr_room_instructions/spr_room_instructions.yy",},
     {"name":"obj_navigator","order":2,"path":"objects/obj_navigator/obj_navigator.yy",},
