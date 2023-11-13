@@ -109,6 +109,11 @@ if(sprite_index != spr_player_jump){
     }	
 }
 
+// Destroy when off-screen horizontally
+if (x + sprite_width < 0) {    
+    instance_destroy();
+}
+
 
 
 
