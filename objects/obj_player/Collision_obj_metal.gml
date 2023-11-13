@@ -14,9 +14,9 @@ if (global.special_mode != true) {
 
 	layer_set_visible("Tint", true);
 	
-	if (obj_game_controller.alarm[0] < 0) {
+	//if (obj_game_controller.alarm[0] < 0) {
 		obj_game_controller.alarm[0] = 60 * 5;
-	}
+	//}
 
 	with (other) {
 		sprite_index = spr_pwrp_taken;

@@ -6,12 +6,12 @@ if (global.special_mode != true) {
 
 	global.game_speed = global.game_speed / 1.3;
 	
-	obj_player.jumpsp = 8
+	//obj_player.jumpsp = 8
 	
 
-	if (obj_game_controller.alarm[0] < 0) {
+	//if (obj_game_controller.alarm[0] < 0) {
 		obj_game_controller.alarm[0] = 60 * 5;
-	}
+	//}
 
 	audio_stop_sound(msc_game);
 	if (!audio_is_playing(snd_slow)) audio_play_sound(snd_slow, 1, false);
