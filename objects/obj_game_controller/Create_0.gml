@@ -18,6 +18,9 @@ shake_speed = 1;
 
 // Spawn sheep
 if room == rm_game spawn_players(30);
+
+// Max simultaneous snd_hit plays
+global.snd_hit_max = 0;
 	
 
 // Score 

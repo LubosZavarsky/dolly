@@ -1,5 +1,5 @@
 vsp = 0;
-jumpsp = 6;
+jumpsp = 7;
 grv = 0.3;
 
 jumps = 0;
@@ -19,6 +19,8 @@ jiggle_direction = irandom(1)
 jiggle_speed = random(1)
 
 multiplied = false;
+
+snd_hit_played = false;
 
 	
 if (result < 65) {

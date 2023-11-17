@@ -13,6 +13,7 @@ if (countdown_time <= 0) {
 	
 	global.game_speed = 0;
 	stop_audio();
+	
 	if (!audio_is_playing(snd_win)) audio_play_sound(snd_win, 1, false);
 	if (instance_number(obj_fader) == 0) instance_create_layer(x, y, "Fade", obj_fader);
 		
@@ -36,6 +37,5 @@ if (global.shake_magnitude > 0)
 	global.shake_magnitude -= 0.2;
 }
 
-
-
-
+// Reset snd_hit max limit
+if !audio_is_playing(snd_hit) global.snd_hit_max = 0;

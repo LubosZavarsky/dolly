@@ -10,8 +10,14 @@ if (collision) {
 	global.shake_magnitude = 10;	
 	x += global.game_speed;
 	
-	 
-	if (!audio_is_playing(snd_hit)) audio_play_sound(snd_hit, 1, false)
+		 
+	if (snd_hit_played == false) {
+		global.snd_hit_max++;
+		if (global.snd_hit_max < 5) audio_play_sound(snd_hit, 1, false);
+		snd_hit_played = true;	
+	}
+	
+	collision = false;
 	
 	exit;
 }
